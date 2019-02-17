@@ -6,10 +6,14 @@
 
 	<!-- <context-param> <param-name>resteasy.scan</param-name> <param-value>true</param-value> 
 		</context-param> -->
+		
+	<welcome-file-list>  
+   		<welcome-file>index.jsp</welcome-file> 
+  	</welcome-file-list>  
 
 	<context-param>
 		<param-name>resteasy.resources</param-name>
-		<param-value>com.smartpark.service.DataProviderService</param-value>
+		<param-value>com.smartpark.controller.ParkingController</param-value>
 	</context-param>
 
 	<listener>
@@ -26,5 +30,9 @@
 		<servlet-name>resteasy-servlet</servlet-name>
 		<url-pattern>/*</url-pattern>
 	</servlet-mapping>
+	
+	<welcome-file-list>  
+   	<welcome-file>index.html</welcome-file> 
+  	</welcome-file-list>  
 
 </web-app>
